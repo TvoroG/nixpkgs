@@ -3135,6 +3135,12 @@ in
 
   polkit_gnome = callPackage ../tools/security/polkit-gnome { };
 
+  popcorntime = callPackage  ../applications/video/popcorntime {
+    nwjs = nwjs_0_12;
+    gconf = pkgs.gnome.GConf;
+    gtk = gtk2;
+  };
+
   ponysay = callPackage ../tools/misc/ponysay { };
 
   popfile = callPackage ../tools/text/popfile { };
